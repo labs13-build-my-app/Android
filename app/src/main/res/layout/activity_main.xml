@@ -9,32 +9,41 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="321dp"
+        tools:layout_editor_absoluteY="24dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:padding="7dp"
+                android:text="Get Started" />
+
             <ImageView
-                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
                 android:adjustViewBounds="true"
                 android:cropToPadding="true"
-                android:layout_gravity="center_horizontal"
                 android:src="@drawable/hero_landing" />
 
             <TextView
-                android:text="Services"
+                style="@style/viewParent.headerText"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                style="@style/viewParent.headerText" />
+                android:text="Services" />
 
-            <include layout="@layout/card_category"/>
-            <include layout="@layout/card_category"/>
+            <include layout="@layout/card_category" />
 
-
+            <include layout="@layout/card_category_app" />
 
 
         </LinearLayout>
