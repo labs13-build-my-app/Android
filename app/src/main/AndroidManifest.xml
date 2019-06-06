@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".BottomNavigationBehavior"/>
-
-        <activity android:name=".MainActivity">
-
+        <activity android:name=".SignUp.AddPhoto"></activity>
+        <activity android:name=".SignUp.login" />
+        <activity android:name=".SignUp.CreateAccount" />
+        <activity android:name=".BottomNavFragments.BottomNavigation" />
+        <activity android:name=".SignUp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
