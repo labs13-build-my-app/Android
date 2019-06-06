@@ -52,8 +52,8 @@ public class BottomNavigation extends AppCompatActivity {
                         case R.id.navigationSearch:
                             selectedFragment = new SearchFragment();
                             break;
-                        case R.id.navigationMyCourses:
-                            selectedFragment = new CoursesFragment();
+                        case R.id.navigationMyDev:
+                            selectedFragment = new DevelopersFragment();
                             break;
                         case  R.id.navigationMenu:
                             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
