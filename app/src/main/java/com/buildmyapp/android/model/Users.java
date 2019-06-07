@@ -5,7 +5,7 @@ import org.json.JSONObject;
 
 public class Users {
     private long userid;
-    private String username, password;
+    private String username, password, email;
 
     public Users(){
 
@@ -19,6 +19,11 @@ public class Users {
         }
         try {
             this.username = json.getString("some name");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        try {
+            this.email = json.getString("email");
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -39,6 +44,14 @@ public class Users {
     public void setUsername(String username) {
         this.username = username;
     }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 
     public String getPassword() {
         return password;

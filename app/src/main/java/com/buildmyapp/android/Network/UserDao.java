@@ -13,8 +13,8 @@ import java.util.Map;
 public class UserDao {
     private static final String BASE_URL = "https://build-my-app.herokuapp.com/";
     public static final String USER_URL = BASE_URL + "api/user";
-    private static final String CLIENT_ID = "";
-    private static final String CLIENT_SECRET = "";
+    private static final String CLIENT_ID = "erkAAAar4RrEqx4GcMSefhL42s2fulSu";
+   // private static final String CLIENT_SECRET = "";
     private static final String CLIENT_ID_SECRET = CLIENT_ID + ":" + CLIENT_SECRET;
 
     public static Map<String, String> headerProperties;
@@ -31,7 +31,7 @@ public class UserDao {
         String tokenRequest = null;
         try {
             tokenRequest = NetworkAdapter.httpRequest(
-                    "http://192.168.1.14:2019/oauth/token?grant_type=password&username="
+                   "http://192.168.1.14:2019/oauth/token?grant_type=password&username="
                             + username + "&password="
                             + password + "&scope=",
                     "POST", null, headerProperties);
@@ -49,7 +49,7 @@ public class UserDao {
 
             String result = null;
             try {
-                result = NetworkAdapter.httpRequest("https://build-my-app.herokuapp.com/auth/login/", "GET", null, headerProperties);
+                result = NetworkAdapter.httpRequest("http://192.168.1.14:2019/restaurants/all", "GET", null, headerProperties);
             } catch (IOException e) {
                 e.printStackTrace();
             }
