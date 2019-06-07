@@ -14,7 +14,7 @@ public class UserDao {
     private static final String BASE_URL = "https://build-my-app.herokuapp.com/";
     public static final String USER_URL = BASE_URL + "api/user";
     private static final String CLIENT_ID = "erkAAAar4RrEqx4GcMSefhL42s2fulSu";
-   // private static final String CLIENT_SECRET = "";
+    private static final String CLIENT_SECRET = "Hpf3kUc0osyOOPQsluaFOEtegXzrAALW008VYQ7ASbLwyW63YXCASHvvq-YfRKpB";
     private static final String CLIENT_ID_SECRET = CLIENT_ID + ":" + CLIENT_SECRET;
 
     public static Map<String, String> headerProperties;

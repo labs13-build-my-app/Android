@@ -12,7 +12,6 @@
         <activity android:name=".TestConnection"></activity>
         <activity android:name=".MessageSeller" />
         <activity android:name=".bio" />
-        <activity android:name=".DevList" />
         <activity android:name=".SignUp.AddPhoto" />
         <activity android:name=".SignUp.login" />
         <activity android:name=".SignUp.CreateAccount" />
