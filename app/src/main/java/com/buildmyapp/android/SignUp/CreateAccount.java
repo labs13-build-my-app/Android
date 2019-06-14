@@ -9,9 +9,10 @@ import android.widget.Button;
 
 import com.buildmyapp.android.R;
 import com.buildmyapp.android.TestConnection;
+import com.buildmyapp.android.testingLogin;
 
 public class CreateAccount extends AppCompatActivity {
-    Button testBtn;
+    Button testBtn,testLogin;
     CardView signUpContinue;
 
     @Override
@@ -20,6 +21,8 @@ public class CreateAccount extends AppCompatActivity {
         setContentView(R.layout.create_account);
 
         testBtn = (Button) findViewById(R.id.button);
+
+        testLogin = (Button) findViewById(R.id.login_test);
 
         signUpContinue = (CardView) findViewById(R.id.cardView_signup);
 
@@ -38,6 +41,15 @@ public class CreateAccount extends AppCompatActivity {
 
                 Intent toTestConnection = new Intent(CreateAccount.this, TestConnection.class);
                 startActivity(toTestConnection);
+            }
+        });
+
+        testLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent toTestLogin = new Intent(CreateAccount.this, testingLogin.class);
+                startActivity(toTestLogin);
             }
         });
 

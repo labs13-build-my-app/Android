@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".SignUp.MainActivity"
-    tools:showIn="@layout/app_bar_main"
     style="@style/parent.contentLayout">
 
     <android.support.v4.widget.NestedScrollView
@@ -18,13 +17,28 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo_final" />
+
             <TextView
                 android:id="@+id/signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/textview_border"
                 android:padding="7dp"
+                android:layout_toRightOf="@id/logo"
+                android:layout_margin="40dp"
+
                 android:text="Get Started" />
+            </RelativeLayout>
+
 
             <ImageView
                 android:layout_width="wrap_content"
