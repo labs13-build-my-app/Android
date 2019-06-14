@@ -8,7 +8,7 @@ import android.view.View;
 
 public class bio extends AppCompatActivity {
 
-    CardView sendMessege;
+    CardView sendMessege, askPlan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +17,23 @@ public class bio extends AppCompatActivity {
 
         sendMessege = (CardView) findViewById(R.id.message_cv);
 
+        askPlan = (CardView) findViewById(R.id.message_plan);
+
         sendMessege.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent toMessege = new Intent(bio.this, MessageSeller.class);
                 startActivity(toMessege);
+            }
+        });
+
+        askPlan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent toPlan = new Intent(bio.this, Plan.class);
+                startActivity(toPlan);
             }
         });
     }
