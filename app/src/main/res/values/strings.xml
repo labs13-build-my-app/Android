@@ -2,4 +2,10 @@
     <string name="app_name">Android</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="com_auth0_client_id">YOUR_CLIENT_ID</string>
+    <string name="com_auth0_domain">YOUR_DOMAIN</string>
+
+
 </resources>
