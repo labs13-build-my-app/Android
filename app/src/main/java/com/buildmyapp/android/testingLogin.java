@@ -42,7 +42,7 @@ public class testingLogin extends Activity {
     private void login() {
         token.setText("Not logged in");
         WebAuthProvider.init(auth0)
-                .withScheme("https://build-my-app-fe.onrender.com/callback")
+                .withScheme("demo")
                 .withAudience(String.format("https://%s/userinfo", getString(R.string.com_auth0_domain)))
                 .start(testingLogin.this, new AuthCallback() {
                     @Override
@@ -64,6 +64,7 @@ public class testingLogin extends Activity {
                             }
                         });
                     }
+
                     @Override
                     public void onSuccess(@NonNull final Credentials credentials) {
                         runOnUiThread(new Runnable() {
@@ -73,7 +74,11 @@ public class testingLogin extends Activity {
                             }
                         });
                     }
+
+
                 });
-        }
     }
+    }
+
+
 

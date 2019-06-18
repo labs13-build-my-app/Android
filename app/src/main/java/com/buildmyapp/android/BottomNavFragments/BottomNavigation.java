@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import com.buildmyapp.android.R;
 
 
-public class BottomNavigation extends AppCompatActivity {
+public class BottomNavigation extends AppCompatActivity  {
 
 
 

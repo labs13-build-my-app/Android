@@ -18,8 +18,34 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".testingLogin"></activity>
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication"
+        >
+
+        <activity
+            android:name="com.auth0.lock.LockActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Lock.Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="dev-juy4gqyj.auth0.com"
+                    android:scheme="erkaaaar4rreqx4gcmsefhl42s2fulsu" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.auth0.lock.client-id"
+            android:value="@string/com_auth0_client_id" />
+        <meta-data
+            android:name="com.auth0.lock.domain-url"
+            android:value="@string/com_auth0_domain" /> <!-- Auth0 Lock End -->
+        <activity android:name=".testingLogin" />
         <activity android:name=".Plan" />
         <activity android:name=".AboutMobile" />
         <activity android:name=".aboutDev" />
