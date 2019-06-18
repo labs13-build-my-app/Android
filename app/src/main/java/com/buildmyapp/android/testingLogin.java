@@ -2,6 +2,7 @@ package com.buildmyapp.android;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,7 @@ import com.auth0.android.authentication.AuthenticationException;
 import com.auth0.android.provider.AuthCallback;
 import com.auth0.android.provider.WebAuthProvider;
 import com.auth0.android.result.Credentials;
+import com.buildmyapp.android.BottomNavFragments.BottomNavigation;
 
 public class testingLogin extends Activity {
 
@@ -73,7 +75,12 @@ public class testingLogin extends Activity {
                                 token.setText("Logged in: " + credentials.getAccessToken());
                             }
                         });
+
+                        startActivity(new Intent(testingLogin.this, BottomNavigation.class));
                     }
+
+
+
 
 
                 });
