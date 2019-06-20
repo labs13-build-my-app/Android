@@ -12,6 +12,7 @@ import com.buildmyapp.android.AboutMobile;
 import com.buildmyapp.android.BottomNavFragments.BottomNavigation;
 import com.buildmyapp.android.R;
 import com.buildmyapp.android.aboutDev;
+import com.buildmyapp.android.testingLogin;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent toSignUp = new Intent(MainActivity.this, login.class);
+                Intent toSignUp = new Intent(MainActivity.this, testingLogin.class);
                 startActivity(toSignUp);
             }
         });
