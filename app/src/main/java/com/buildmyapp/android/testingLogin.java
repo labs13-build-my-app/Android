@@ -41,6 +41,8 @@ public class testingLogin extends Activity {
 
 
 
+
+
     private void login() {
         token.setText("Not logged in");
         WebAuthProvider.init(auth0)
