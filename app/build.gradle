@@ -37,5 +37,10 @@ android {
         implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
         implementation 'com.auth0.android:auth0:1.15.2'
         implementation 'com.auth0.android:lock:1.18.0'
+        implementation 'com.android.volley:volley:1.1.1'
     }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
 }

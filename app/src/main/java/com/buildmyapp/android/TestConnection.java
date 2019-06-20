@@ -46,9 +46,9 @@ public class TestConnection extends AppCompatActivity {
 
                 for (Users user : users) {
                     String content = "";
-                    content += "ID: " + user.getUserid() + "\n";
-                    content += "User name: " + user.getUsername() + "\n";
-                    content += "Password: " + user.getPassword() + "\n";
+                    content += "ID: " + user.getId() + "\n";
+                    content += "User name: " + user.getFirstName() + "\n";
+                    content += "Password: " + user.getLastName() + "\n";
                     content += "Email: " + user.getEmail() + "\n";
 
 

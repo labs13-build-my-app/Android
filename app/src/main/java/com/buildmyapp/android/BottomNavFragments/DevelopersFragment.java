@@ -14,10 +14,14 @@ import android.widget.ImageView;
 
 import com.buildmyapp.android.R;
 import com.buildmyapp.android.bio;
+import com.buildmyapp.android.model.Developer;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DevelopersFragment extends Fragment {
 
-    View v;
+
 
 
     @Nullable
@@ -27,16 +31,19 @@ public class DevelopersFragment extends Fragment {
         View v =  inflater.inflate(R.layout.fragment_developers, container, false);
 
 
-        ImageView userBio  = (ImageView)v.findViewById(R.id.profile_Dummy);
 
-        userBio.setOnClickListener(new View.OnClickListener() {
+
+
+        //ImageView userBio  = (ImageView)v.findViewById(R.id.profile_Dummy);
+
+       /** userBio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent toBio = new Intent(getActivity(), bio.class);
                 startActivity(toBio);
             }
-        });
+        }); **/
 
 
         return v;
