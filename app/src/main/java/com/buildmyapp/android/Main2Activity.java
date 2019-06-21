@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -13,7 +12,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.buildmyapp.android.adapter.MyAdapter;
 import com.buildmyapp.android.model.Developer;
 
 import org.json.JSONArray;
@@ -25,7 +23,7 @@ import java.util.List;
 
 public class Main2Activity extends AppCompatActivity {
 
-    private static final String URL_DATA = "https://build-my-app.herokuapp.com/";
+   /** private static final String URL_DATA = "https://build-my-app.herokuapp.com/";
 
 
     private RecyclerView devRv;
@@ -86,5 +84,7 @@ public class Main2Activity extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
-}
 
+
+    **/
+}

@@ -11,7 +11,7 @@ import com.buildmyapp.android.model.Developer;
 
 import java.util.List;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
+/**public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     private List<Developer> developers;
     private Context context;
@@ -23,4 +23,4 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.activity_main2,parent,false);
         return new ViewHolder(v);
-    }
+    } **/
