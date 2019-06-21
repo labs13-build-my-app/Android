@@ -31,7 +31,7 @@ public class UserDao {
         String tokenRequest = null;
         try {
             tokenRequest = NetworkAdapter.httpRequest(
-                   "http://192.168.1.14:2019/oauth/token?grant_type=password&username="
+                   "dev-juy4gqyj.auth0.com"
                             + username + "&password="
                             + password + "&scope=",
                     "POST", null, headerProperties);
@@ -49,7 +49,7 @@ public class UserDao {
 
             String result = null;
             try {
-                result = NetworkAdapter.httpRequest("http://192.168.1.14:2019/restaurants/all", "GET", null, headerProperties);
+                result = NetworkAdapter.httpRequest("dev-juy4gqyj.auth0.com", "GET", null, headerProperties);
             } catch (IOException e) {
                 e.printStackTrace();
             }
