@@ -7,12 +7,12 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 
+import com.buildmyapp.android.Main2Activity;
 import com.buildmyapp.android.R;
 import com.buildmyapp.android.TestConnection;
-import com.buildmyapp.android.testingLogin;
 
 public class CreateAccount extends AppCompatActivity {
-    Button testBtn,testLogin;
+    Button testBtn,testLogin, testDev;
     CardView signUpContinue;
 
     @Override
@@ -26,14 +26,8 @@ public class CreateAccount extends AppCompatActivity {
 
         signUpContinue = (CardView) findViewById(R.id.cardView_signup);
 
-        signUpContinue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        testDev = (Button) findViewById(R.id.testDev);
 
-                Intent toAddPhoto = new Intent(CreateAccount.this, AddPhoto.class);
-                startActivity(toAddPhoto);
-            }
-        });
 
         testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,8 +42,16 @@ public class CreateAccount extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent toTestLogin = new Intent(CreateAccount.this, testingLogin.class);
+                Intent toTestLogin = new Intent(CreateAccount.this, Auth0_Login.class);
                 startActivity(toTestLogin);
+            }
+        });
+
+        testDev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                 Intent toDev = new Intent(CreateAccount.this, Main2Activity.class);
+                 startActivity(toDev);
             }
         });
 

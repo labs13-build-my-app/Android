@@ -8,11 +8,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.buildmyapp.android.AboutMobile;
-import com.buildmyapp.android.BottomNavFragments.BottomNavigation;
+import com.buildmyapp.android.mainScreenActivity.AboutMobile;
 import com.buildmyapp.android.R;
-import com.buildmyapp.android.aboutDev;
-import com.buildmyapp.android.testingLogin;
+import com.buildmyapp.android.mainScreenActivity.aboutDev;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent toSignUp = new Intent(MainActivity.this, testingLogin.class);
+                Intent toSignUp = new Intent(MainActivity.this, Auth0_Login.class);
                 startActivity(toSignUp);
             }
         });

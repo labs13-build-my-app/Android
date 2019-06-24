@@ -44,13 +44,13 @@
         <meta-data
             android:name="com.auth0.lock.domain-url"
             android:value="@string/com_auth0_domain" /> <!-- Auth0 Lock End -->
-        <activity android:name=".testingLogin" />
+        <activity android:name=".SignUp.Auth0_Login" />
         <activity android:name=".Plan" />
-        <activity android:name=".AboutMobile" />
-        <activity android:name=".aboutDev" />
+        <activity android:name=".mainScreenActivity.AboutMobile" />
+        <activity android:name=".mainScreenActivity.aboutDev" />
         <activity android:name=".TestConnection" />
-        <activity android:name=".MessageSeller" />
-        <activity android:name=".bio" />
+        <activity android:name=".innerActivity.MessageSeller" />
+        <activity android:name=".innerActivity.bio" />
         <activity android:name=".SignUp.AddPhoto" />
         <activity android:name=".SignUp.login" />
         <activity android:name=".SignUp.CreateAccount" />
