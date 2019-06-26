@@ -1,6 +1,7 @@
 package com.buildmyapp.android.api;
 
-import com.buildmyapp.android.model.Users;
+
+import com.buildmyapp.android.model.model.Users;
 
 import java.util.List;
 

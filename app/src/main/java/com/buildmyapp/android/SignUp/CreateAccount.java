@@ -7,7 +7,6 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 
-import com.buildmyapp.android.Main2Activity;
 import com.buildmyapp.android.R;
 import com.buildmyapp.android.TestConnection;
 
@@ -26,7 +25,7 @@ public class CreateAccount extends AppCompatActivity {
 
         signUpContinue = (CardView) findViewById(R.id.cardView_signup);
 
-        testDev = (Button) findViewById(R.id.testDev);
+
 
 
         testBtn.setOnClickListener(new View.OnClickListener() {
@@ -47,13 +46,6 @@ public class CreateAccount extends AppCompatActivity {
             }
         });
 
-        testDev.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                 Intent toDev = new Intent(CreateAccount.this, Main2Activity.class);
-                 startActivity(toDev);
-            }
-        });
 
     }
 }

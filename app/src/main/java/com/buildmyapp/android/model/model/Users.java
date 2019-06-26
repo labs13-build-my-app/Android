@@ -1,11 +1,20 @@
-package com.buildmyapp.android.model;
+package com.buildmyapp.android.model.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-public class Developer implements Serializable {
+public class Users implements Serializable {
+    @SerializedName("Id")
+    @Expose
+    private Integer id;
+
+    @SerializedName("role")
+    @Expose
+    private String role;
+
+
     @SerializedName("firstName")
     @Expose
     private String firstName;
@@ -36,8 +45,8 @@ public class Developer implements Serializable {
     private String twitter;
 
 
-    public Developer(String firstname, String lastName, String email, String devType, String skills, String linkedIn, String gitHub, String twitter) {
-        this.firstName = firstname;
+    public Users(Integer id, String role, String firstName, String lastName, String email, String devType, String skills, String linkedIn, String gitHub, String twitter) {
+        this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.devType = devType;
@@ -45,6 +54,8 @@ public class Developer implements Serializable {
         this.linkedIn = linkedIn;
         this.gitHub = gitHub;
         this.twitter = twitter;
+        this.id = id;
+        this.role = role;
     }
 
     public String getFirstName() {
@@ -109,12 +120,31 @@ public class Developer implements Serializable {
     public void setGitHub(String gitHub) {
         this.gitHub = gitHub;
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
 }
 
-    /**
-     *  PUT	/api/account/developer/update-profile-developer
-     * DELETE	/api/account/developer/delete-profile-developer
-     * POST	/api/account/developer/submit-plan/:project_id
-     * PUT	/api/account/developer/update-plan/:plan_id
-     * DELETE	/api/account/developer/delete-plan/:plan_id
-     **/
+/**
+ *  GET	/api/users/profile/:user_id	200 - returns user data
+ * 404 - user not found	User data for profile page
+ * GET	/api/users/list-users	200 - list of all users
+ * 404 - users not found
+ * 500 - server error	list of all users, no specific purpose other than testing
+ * GET	/api/users/list-developers	200 - list of developers
+ * 404 - developers not found
+ * 500 - server error	paginated list of developers
+ **/

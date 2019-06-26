@@ -1,6 +1,8 @@
 package com.buildmyapp.android.api;
 
-import com.buildmyapp.android.model.Developer;
+
+
+import com.buildmyapp.android.model.model.developers.Developer;
 
 import java.util.List;
 

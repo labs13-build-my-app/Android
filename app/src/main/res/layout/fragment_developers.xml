@@ -1,52 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".BottomNavFragments.DevelopersFragment">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <android.support.v4.widget.NestedScrollView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="321dp"
-        tools:layout_editor_absoluteY="24dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        android:clipToPadding="false" />
 
-
-
-    <ImageView
-        android:id="@+id/profile_Dummy"
-        android:layout_width="64dp"
-        android:src="@drawable/add_person"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rank"
-        android:layout_height="64dp" />
-
-    <TextView
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/profile_Dummy"
-        app:layout_constraintTop_toTopOf="@+id/profile"
-        app:layout_constraintBottom_toBottomOf="@+id/profile"
-        android:id="@+id/user_name_rankings"
-        android:layout_gravity="center_vertical"
-        style="@style/TextAppearance.AppCompat.Large"
+    <ProgressBar
+        android:id="@+id/main_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:text="username" />
+        android:layout_gravity="center"/>
 
-
-    <include layout="@layout/dev_row" />
-
-    <include layout="@layout/dev_row" />
-</LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
-
-
-
-</android.support.constraint.ConstraintLayout>
+</FrameLayout>
