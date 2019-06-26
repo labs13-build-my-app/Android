@@ -20,7 +20,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main2Activity"></activity>
+        <activity
+            android:name=".DevDetailsActivity"
+            android:label="@string/title_activity_dev_details"/>
+
+        <activity
+            android:name=".ProjectDetailsActivity"
+            android:label="@string/title_activity_project_details"
+           />
+
         <activity
             android:name="com.auth0.lock.LockActivity"
             android:launchMode="singleTask"
@@ -44,15 +52,8 @@
         <meta-data
             android:name="com.auth0.lock.domain-url"
             android:value="@string/com_auth0_domain" /> <!-- Auth0 Lock End -->
-        <activity android:name=".SignUp.Auth0_Login" />
-        <activity android:name=".Plan" />
-        <activity android:name=".mainScreenActivity.AboutMobile" />
-        <activity android:name=".mainScreenActivity.aboutDev" />
         <activity android:name=".TestConnection" />
-        <activity android:name=".innerActivity.MessageSeller" />
-        <activity android:name=".innerActivity.bio" />
-        <activity android:name=".SignUp.AddPhoto" />
-        <activity android:name=".SignUp.login" />
+        <activity android:name=".SignUp.Auth0_Login"/>
         <activity android:name=".SignUp.CreateAccount" />
         <activity android:name=".BottomNavFragments.BottomNavigation" />
         <activity android:name=".SignUp.MainActivity">
