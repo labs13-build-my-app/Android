@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bio">
+    tools:context=".innerActivity.bio">
 
 
     <android.support.v7.widget.CardView
@@ -40,7 +40,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/imageView2"
-                android:text="{Developer's Name}"
+                android:text="Pablo Ogata"
                 android:textSize="25sp" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_below="@+id/Dev_Name"
                 android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@+id/imageView2"
-                android:text="A short Description about the dev" />
+                android:text="Skills: Android and Java" />
 
             <RatingBar
                 android:id="@+id/ratingBar"
@@ -110,7 +110,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ask For Plan"
+                android:text="Submit a Plan"
                 android:textSize="20sp"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
-                android:text="Skills"
+                android:text="Plans"
                 android:textColor="@color/whiteBodyColor"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -156,7 +156,7 @@
                 android:layout_below="@+id/textview_skills"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
-                android:text="this is a dummy content. This is where some of the dev skills are going to be displayed." />
+                android:text="No Plans to be displayed at that moment." />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
@@ -194,7 +194,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="15dp"
         android:textStyle="bold"
-        android:text="Uploaded Projects"
+        android:text="Uploaded Projects: 0 Complided "
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/privious_work1"
         app:layout_constraintStart_toStartOf="parent"

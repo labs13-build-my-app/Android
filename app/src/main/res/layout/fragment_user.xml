@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    tools:context=".innerActivity.bio">
+
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView3"
+        android:id="@+id/cardView2"
         android:layout_width="380dp"
         android:layout_height="150dp"
         android:layout_marginStart="15dp"
@@ -26,28 +29,27 @@
                 android:id="@+id/imageView2"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
-                android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 app:srcCompat="@drawable/add_person" />
 
             <TextView
-                android:id="@+id/My_Name"
+                android:id="@+id/Dev_Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/imageView2"
-                android:text="{My Name}"
+                android:text="Pablo Ogata"
                 android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/My_Name"
+                android:layout_below="@+id/Dev_Name"
                 android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@+id/imageView2"
-                android:text="A short Description about me" />
+                android:text="Skills: Android and Java" />
 
             <RatingBar
                 android:id="@+id/ratingBar"
@@ -61,13 +63,13 @@
 
     <android.support.v7.widget.CardView
         android:id="@+id/message_cv"
-        android:layout_width="150dp"
+        android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         app:cardBackgroundColor="#2196F3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
         app:cardCornerRadius="5dp">
 
         <RelativeLayout
@@ -77,10 +79,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edit Profile"
-                android:layout_centerInParent="true"
-                android:textColor="@color/whiteBodyColor"
+                android:text="Message"
                 android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/whiteBodyColor"
                 android:textStyle="bold"
 
                 />
@@ -88,10 +91,22 @@
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
-
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="AskPlan"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/message_cv"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView4"
+        android:id="@+id/cardView3"
         android:layout_width="395dp"
         android:layout_height="200dp"
         android:layout_marginStart="15dp"
@@ -113,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
-                android:text="Skills"
+                android:text="Plans"
                 android:textColor="@color/whiteBodyColor"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -124,7 +139,7 @@
                 android:layout_below="@+id/textview_skills"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
-                android:text="this is a dummy content. This is where some of my skills are going to be displayed." />
+                android:text="No Plans to be displayed at that moment." />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
@@ -162,13 +177,11 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="15dp"
         android:textStyle="bold"
-        android:text="Uploaded Projects"
+        android:text="Uploaded Projects: 0 Complided "
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/privious_work1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
 
     <android.support.constraint.Guideline
@@ -182,8 +195,13 @@
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="411dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline4"
@@ -198,5 +216,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_end="20dp" />
+
 
 </android.support.constraint.ConstraintLayout>
