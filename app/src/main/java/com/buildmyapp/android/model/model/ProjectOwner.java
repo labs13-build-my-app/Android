@@ -1,21 +1,11 @@
-package com.buildmyapp.android.model;
+package com.buildmyapp.android.model.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-public class OnBoarding implements Serializable {
-
-    @SerializedName("Id")
-    @Expose
-    private Integer id;
-
-    @SerializedName("role")
-    @Expose
-    private String role;
-
-
+public class ProjectOwner implements Serializable {
     @SerializedName("firstName")
     @Expose
     private String firstName;
@@ -26,12 +16,6 @@ public class OnBoarding implements Serializable {
     @SerializedName("email")
     @Expose
     private String email;
-    @SerializedName("devType")
-    @Expose
-    private String devType;
-    @SerializedName("skills")
-    @Expose
-    private String skills;
 
     @SerializedName("linkedIn")
     @Expose
@@ -46,25 +30,21 @@ public class OnBoarding implements Serializable {
     private String twitter;
 
 
-    public OnBoarding(Integer id, String role, String firstName, String lastName, String email, String devType, String skills, String linkedIn, String gitHub, String twitter) {
+    public ProjectOwner(String firstName, String lastName, String email, String linkedIn, String gitHub, String twitter) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.devType = devType;
-        this.skills = skills;
         this.linkedIn = linkedIn;
         this.gitHub = gitHub;
         this.twitter = twitter;
-        this.id = id;
-        this.role = role;
     }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstName = firstname;
+    public void setFirstname(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
@@ -83,21 +63,6 @@ public class OnBoarding implements Serializable {
         this.email = email;
     }
 
-    public String getDevType() {
-        return devType;
-    }
-
-    public void setDevType(String devType) {
-        this.devType = devType;
-    }
-
-    public String getSkills() {
-        return skills;
-    }
-
-    public void setSkills(String skills) {
-        this.skills = skills;
-    }
     public String getLinkedIn() {
         return linkedIn;
     }
@@ -121,25 +86,14 @@ public class OnBoarding implements Serializable {
     public void setGitHub(String gitHub) {
         this.gitHub = gitHub;
     }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
 }
 
 /**
- *  post	api/account/onboarding/signup
- * get	/api/account/onboarding/login
+ *  PUT	/api/account/project-owner/update-profile-project-owner
+ * DELETE	/api/account/project-owner/delete-profile-project-owner
+ * GET	/api/account/project-owner/project-page/:project_id
+ * POST	/api/account/project-owner/create-project
+ * PUT	/api/account/project-owner/update-project/:project_id
+ * PUT	/api/account/project-owner/accept-plan/:project_id
+ * DELETE	/api/account/project-owner/delete-project/:project_id
  **/

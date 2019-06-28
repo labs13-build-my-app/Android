@@ -6,6 +6,8 @@
 
     <string name="com_auth0_client_id">erkAAAar4RrEqx4GcMSefhL42s2fulSu</string>
     <string name="com_auth0_domain">dev-juy4gqyj.auth0.com</string>
+    <string name="title_activity_project_details">Project Details</string>
+    <string name="title_activity_dev_details">Dev Details</string>
 
 
 </resources>

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.buildmyapp.android.api.JsonTestApi;
-import com.buildmyapp.android.model.Users;
+import com.buildmyapp.android.model.model.Users;
 
 import java.util.List;
 

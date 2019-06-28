@@ -38,10 +38,11 @@ android {
         implementation 'com.auth0.android:auth0:1.15.2'
         implementation 'com.auth0.android:lock:1.18.0'
         implementation 'com.android.volley:volley:1.1.1'
+        implementation 'com.github.bumptech.glide:glide:4.9.0'
+        annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
     }
 }
 
 dependencies {
     implementation 'com.android.support.constraint:constraint-layout:+'
-    implementation 'com.android.support:appcompat-v7:28.0.0'
 }

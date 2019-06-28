@@ -1,11 +1,12 @@
-package com.buildmyapp.android.model;
+package com.buildmyapp.android.model.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-public class Users implements Serializable {
+public class OnBoarding implements Serializable {
+
     @SerializedName("Id")
     @Expose
     private Integer id;
@@ -45,7 +46,7 @@ public class Users implements Serializable {
     private String twitter;
 
 
-    public Users(Integer id, String role, String firstName, String lastName, String email, String devType, String skills, String linkedIn, String gitHub, String twitter) {
+    public OnBoarding(Integer id, String role, String firstName, String lastName, String email, String devType, String skills, String linkedIn, String gitHub, String twitter) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -139,12 +140,6 @@ public class Users implements Serializable {
 }
 
 /**
- *  GET	/api/users/profile/:user_id	200 - returns user data
- * 404 - user not found	User data for profile page
- * GET	/api/users/list-users	200 - list of all users
- * 404 - users not found
- * 500 - server error	list of all users, no specific purpose other than testing
- * GET	/api/users/list-developers	200 - list of developers
- * 404 - developers not found
- * 500 - server error	paginated list of developers
+ *  post	api/account/onboarding/signup
+ * get	/api/account/onboarding/login
  **/
