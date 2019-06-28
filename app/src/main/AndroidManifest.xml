@@ -53,6 +53,7 @@
             android:name="com.auth0.lock.domain-url"
             android:value="@string/com_auth0_domain" /> <!-- Auth0 Lock End -->
         <activity android:name=".TestConnection" />
+        <activity android:name=".innerActivity.MessageSeller"/>
         <activity android:name=".SignUp.Auth0_Login"/>
         <activity android:name=".SignUp.CreateAccount" />
         <activity android:name=".BottomNavFragments.BottomNavigation" />

@@ -22,5 +22,20 @@
 
     <include layout="@layout/content_project_details" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendMessageOwner"
+            android:text="Send Message"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            />
+    </RelativeLayout>
+
 
 </android.support.design.widget.CoordinatorLayout>
