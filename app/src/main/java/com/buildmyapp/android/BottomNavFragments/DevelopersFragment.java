@@ -42,7 +42,6 @@ public class DevelopersFragment extends Fragment {
     private static final int PAGE_START = 1;
     private boolean isLoading = false;
     private boolean isLastPage = false;
-    // limiting to 5 for this tutorial, since total pages in actual API is very large. Feel free to modify.
     private int TOTAL_PAGES = 0;
     private int currentPage = PAGE_START;
 

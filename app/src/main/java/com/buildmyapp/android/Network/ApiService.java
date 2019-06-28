@@ -17,9 +17,10 @@ public interface ApiService {
             @Query("page") int pageIndex
     );
 
-    @GET("api/users/list-developers")
+    @GET("api/users/list-developers/?type=All")
     Call<DeveloperList> getDevelopers(
             @Query("per") int per,
             @Query("page") int pageIndex
+
     );
 }

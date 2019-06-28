@@ -1,10 +1,10 @@
 
 package com.buildmyapp.android.model.model.developers;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+        import com.google.gson.annotations.Expose;
+        import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
+        import java.util.List;
 
 public class DeveloperList {
 
