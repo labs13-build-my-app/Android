@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Project Detail</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Project_Detail;
+	}
+	#Project_Detail * {
+		margin: 0;
+		padding: 0;
+	}
+	#Project_Detail {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: Project Detail;
+		--web-view-id: Project_Detail;
+		--web-enable-deep-linking: true;
+	}
+	#Rectangle_649 {
+		opacity: 1;
+		filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112, 112, 112, 0.17);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_649 {
+		position: absolute;
+		overflow: visible;
+		width: 331px;
+		height: 214px;
+		left: 31px;
+		top: 41px;
+	}
+	#Marine_Bask {
+		opacity: 1;
+		position: absolute;
+		left: 156px;
+		top: 66px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 152px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(46,97,168,1);
+	}
+	#Rectangle_651 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(117, 117, 117);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_651 {
+		position: absolute;
+		overflow: visible;
+		width: 110px;
+		height: 1px;
+		left: 159px;
+		top: 138px;
+	}
+	#Project_Owner {
+		opacity: 1;
+		position: absolute;
+		left: 159px;
+		top: 107px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 97px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(46,97,168,1);
+	}
+	#Rectangle_655 {
+		opacity: 1;
+		fill: rgba(46,97,168,1);
+	}
+	.Rectangle_655 {
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		height: 100px;
+		left: 47px;
+		top: 76px;
+	}
+	#Group_469 {
+		opacity: 1;
+		position: absolute;
+		width: 99.665px;
+		height: 19.935px;
+		left: 81px;
+		top: 203px;
+		overflow: visible;
+	}
+	#Rectangle_652 {
+		opacity: 1;
+		fill: rgba(255,133,124,1);
+	}
+	.Rectangle_652 {
+		position: absolute;
+		overflow: visible;
+		width: 99.665px;
+		height: 19.935px;
+		left: 0px;
+		top: 0px;
+	}
+	#Message_Marine {
+		opacity: 1;
+		position: absolute;
+		left: 6px;
+		top: 2px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(255,255,255,1);
+	}
+	#MB {
+		opacity: 1;
+		position: absolute;
+		left: 79px;
+		top: 110px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 37px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(255,255,255,1);
+	}
+	#Description_ {
+		opacity: 1;
+		position: absolute;
+		left: 49px;
+		top: 265px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 148px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(46,97,168,1);
+	}
+	#Rectangle_656 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(117, 117, 117);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_656 {
+		position: absolute;
+		overflow: visible;
+		width: 110px;
+		height: 1px;
+		left: 51px;
+		top: 302px;
+	}
+	#Path_2312 {
+		opacity: 1;
+		filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112, 112, 112, 0.17);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_2312 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 383px;
+		left: 39px;
+		width: 331px;
+		height: 160px;
+	}
+	#Willing_to_pay___22_00_Need_By {
+		opacity: 1;
+		position: absolute;
+		left: 47px;
+		top: 315px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 125px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(115,167,247,1);
+	}
+	#Autem_a_labore_incidunt__Natus {
+		opacity: 1;
+		position: absolute;
+		left: 60px;
+		top: 447px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 273px;
+		height: 60px;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(115,167,247,1);
+	}
+	#Go_Back {
+		opacity: 1;
+		position: absolute;
+		left: 49px;
+		top: 11px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 40px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(112,112,112,1);
+	}
+	#Icon___Keyboard_Arrow___Right_ {
+		opacity: 1;
+		transform: rotate(180deg);
+		transform-origin: left;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 27px;
+		top: 6px;
+		overflow: visible;
+	}
+	#Box {
+		opacity: 1;
+		fill: transparent;
+	}
+	.Box {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Path_2044 {
+		opacity: 1;
+		fill: rgba(112,112,112,1);
+	}
+	.Path_2044 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 6.4px;
+		left: 8.8px;
+		width: 6.601px;
+		height: 11.2px;
+	}
+	#Group_472 {
+		opacity: 1;
+		position: absolute;
+		width: 99.665px;
+		height: 19.935px;
+		left: 194px;
+		top: 203px;
+		overflow: visible;
+	}
+	#Rectangle_652_A10_Rectangle_137 {
+		opacity: 1;
+		fill: rgba(255,133,124,1);
+	}
+	.Rectangle_652_A10_Rectangle_137 {
+		position: absolute;
+		overflow: visible;
+		width: 99.665px;
+		height: 19.935px;
+		left: 0px;
+		top: 0px;
+	}
+	#View_Profile {
+		opacity: 1;
+		position: absolute;
+		left: 18px;
+		top: 2px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 64px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(255,255,255,1);
+	}
+	#Project_Details {
+		opacity: 1;
+		position: absolute;
+		left: 147px;
+		top: 404px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 83px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(115,167,247,1);
+	}
+	#Path_2313 {
+		opacity: 1;
+		filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112, 112, 112, 0.17);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_2313 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 553px;
+		left: 39px;
+		width: 331px;
+		height: 160px;
+	}
+	#Autem_a_labore_incidunt__Natus_A10_Text_126 {
+		opacity: 1;
+		position: absolute;
+		left: 60px;
+		top: 617px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 273px;
+		height: 60px;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(115,167,247,1);
+	}
+	#Project_Design_Ideas {
+		opacity: 1;
+		position: absolute;
+		left: 137px;
+		top: 574px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 116px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(115,167,247,1);
+	}
+	#Path_2314 {
+		opacity: 1;
+		filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112, 112, 112, 0.17);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_2314 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 723px;
+		left: 39px;
+		width: 331px;
+		height: 76.108px;
+	}
+	#Reference_Links_ {
+		opacity: 1;
+		position: absolute;
+		left: 142px;
+		top: 744px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 93px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(115,167,247,1);
+	}
+</style>
+</head>
+<body>
+<div id="Project_Detail">
+	<svg class="Rectangle_649">
+		<rect id="Rectangle_649" rx="15" ry="15" x="0" y="0" width="313" height="196">
+		</rect>
+	</svg>
+	<div id="Marine_Bask">
+		<span>Marine Bask</span>
+	</div>
+	<svg class="Rectangle_651">
+		<rect id="Rectangle_651" rx="0" ry="0" x="0" y="0" width="110" height="1">
+		</rect>
+	</svg>
+	<div id="Project_Owner">
+		<span>Project Owner</span>
+	</div>
+	<svg class="Rectangle_655">
+		<rect id="Rectangle_655" rx="0" ry="0" x="0" y="0" width="100" height="100">
+		</rect>
+	</svg>
+	<div id="Group_469">
+		<svg class="Rectangle_652">
+			<rect id="Rectangle_652" rx="9.967529296875" ry="9.967529296875" x="0" y="0" width="99.665" height="19.935">
+			</rect>
+		</svg>
+		<div id="Message_Marine">
+			<span>Message Marine</span>
+		</div>
+	</div>
+	<div id="MB">
+		<span>MB</span>
+	</div>
+	<div id="Description_">
+		<span>Description:</span>
+	</div>
+	<svg class="Rectangle_656">
+		<rect id="Rectangle_656" rx="0" ry="0" x="0" y="0" width="110" height="1">
+		</rect>
+	</svg>
+	<svg class="Path_2312" viewBox="0 0 313 142">
+		<path id="Path_2312" d="M 15 0 L 298 0 C 306.2842712402344 0 313 6.715728759765625 313 15 L 313 127 C 313 135.2842712402344 306.2842712402344 142 298 142 L 15 142 C 6.715728759765625 142 0 135.2842712402344 0 127 L 0 15 C 0 6.715728759765625 6.715728759765625 0 15 0 Z">
+		</path>
+	</svg>
+	<div id="Willing_to_pay___22_00_Need_By">
+		<span>Willing to pay: $22.00<br/>Need By </span>
+	</div>
+	<div id="Autem_a_labore_incidunt__Natus">
+		<span>Autem a labore incidunt. Natus nihil perspiciatis deserunt. Nihil velit rerum ut itaque omnis magni aperiam voluptas.</span>
+	</div>
+	<div id="Go_Back">
+		<span>Go Back</span>
+	</div>
+	<div id="Icon___Keyboard_Arrow___Right_">
+		<svg class="Box">
+			<rect id="Box" rx="0" ry="0" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Path_2044" viewBox="630.6 4.4 6.6 11.2">
+			<path id="Path_2044" d="M 630.9000244140625 4.699999809265137 C 630.5 5.099999904632568 630.5 5.699999809265137 630.9000244140625 6.099999904632568 L 634.800048828125 10 L 630.9000244140625 13.89999961853027 C 630.5 14.29999923706055 630.5 14.89999961853027 630.9000244140625 15.29999923706055 C 631.300048828125 15.69999885559082 631.9000244140625 15.69999885559082 632.300048828125 15.29999923706055 L 636.9000244140625 10.69999885559082 C 637.300048828125 10.29999923706055 637.300048828125 9.69999885559082 636.9000244140625 9.299999237060547 L 632.300048828125 4.699999332427979 C 631.9000244140625 4.300000190734863 631.2999877929688 4.300000190734863 630.9000244140625 4.699999809265137 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Group_472">
+		<svg class="Rectangle_652_A10_Rectangle_137">
+			<rect id="Rectangle_652_A10_Rectangle_137" rx="9.967529296875" ry="9.967529296875" x="0" y="0" width="99.665" height="19.935">
+			</rect>
+		</svg>
+		<div id="View_Profile">
+			<span>View Profile</span>
+		</div>
+	</div>
+	<div id="Project_Details">
+		<span>Project Details</span>
+	</div>
+	<svg class="Path_2313" viewBox="0 0 313 142">
+		<path id="Path_2313" d="M 15 0 L 298 0 C 306.2842712402344 0 313 6.715728759765625 313 15 L 313 127 C 313 135.2842712402344 306.2842712402344 142 298 142 L 15 142 C 6.715728759765625 142 0 135.2842712402344 0 127 L 0 15 C 0 6.715728759765625 6.715728759765625 0 15 0 Z">
+		</path>
+	</svg>
+	<div id="Autem_a_labore_incidunt__Natus_A10_Text_126">
+		<span>Autem a labore incidunt. Natus nihil perspiciatis deserunt. Nihil velit rerum ut itaque omnis magni aperiam voluptas.</span>
+	</div>
+	<div id="Project_Design_Ideas">
+		<span>Project Design Ideas</span>
+	</div>
+	<svg class="Path_2314" viewBox="0 0 313 58.108">
+		<path id="Path_2314" d="M 15 0 L 298 0 C 306.2842712402344 0 313 2.748171091079712 313 6.138211250305176 L 313 51.97019195556641 C 313 55.36023330688477 306.2842712402344 58.10840225219727 298 58.10840225219727 L 15 58.10840225219727 C 6.715728759765625 58.10840225219727 0 55.36023330688477 0 51.97019195556641 L 0 6.138211250305176 C 0 2.748171091079712 6.715728759765625 0 15 0 Z">
+		</path>
+	</svg>
+	<div id="Reference_Links_">
+		<span>Reference Links:</span>
+	</div>
+</div>
+</body>
+</html>

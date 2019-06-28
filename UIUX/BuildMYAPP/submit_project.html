@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>submit project</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: submit_project;
+	}
+	#submit_project * {
+		margin: 0;
+		padding: 0;
+	}
+	#submit_project {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: submit project;
+		--web-view-id: submit_project;
+		--web-enable-deep-linking: true;
+	}
+	#Go_Back {
+		opacity: 1;
+		position: absolute;
+		left: 49px;
+		top: 11px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 40px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(112,112,112,1);
+	}
+	#Icon___Keyboard_Arrow___Right_ {
+		opacity: 1;
+		transform: rotate(180deg);
+		transform-origin: left;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 27px;
+		top: 6px;
+		overflow: visible;
+	}
+	#Box {
+		opacity: 1;
+		fill: transparent;
+	}
+	.Box {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Path_2044 {
+		opacity: 1;
+		fill: rgba(112,112,112,1);
+	}
+	.Path_2044 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 6.4px;
+		left: 8.8px;
+		width: 6.601px;
+		height: 11.2px;
+	}
+	#Description_ {
+		opacity: 1;
+		position: absolute;
+		left: 41px;
+		top: 67px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 148px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(46,97,168,1);
+	}
+	#Rectangle_656 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(117, 117, 117);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_656 {
+		position: absolute;
+		overflow: visible;
+		width: 110px;
+		height: 1px;
+		left: 43px;
+		top: 104px;
+	}
+	#Path_2312 {
+		opacity: 1;
+		filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112, 112, 112, 0.17);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_2312 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 306px;
+		left: 31px;
+		width: 331px;
+		height: 160px;
+	}
+	#Project_Details {
+		opacity: 1;
+		position: absolute;
+		left: 37px;
+		top: 278px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 107px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(46,97,168,1);
+	}
+	#Path_2313 {
+		opacity: 1;
+		filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112, 112, 112, 0.17);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_2313 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 485px;
+		left: 31px;
+		width: 331px;
+		height: 160px;
+	}
+	#Project_Design_Ideas {
+		opacity: 1;
+		position: absolute;
+		left: 37px;
+		top: 457px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 149px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(46,97,168,1);
+	}
+	#Path_2314 {
+		opacity: 1;
+		filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112, 112, 112, 0.17);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_2314 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 664px;
+		left: 31px;
+		width: 331px;
+		height: 76.108px;
+	}
+	#Reference_Links_ {
+		opacity: 1;
+		position: absolute;
+		left: 37px;
+		top: 636px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 119px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(46,97,168,1);
+	}
+	#Group_473 {
+		opacity: 1;
+		position: absolute;
+		width: 247px;
+		height: 37px;
+		left: 64px;
+		top: 143px;
+		overflow: visible;
+	}
+	#Rectangle_670 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_670 {
+		position: absolute;
+		overflow: visible;
+		width: 247px;
+		height: 37px;
+		left: 0px;
+		top: 0px;
+	}
+	#Budget_ {
+		opacity: 1;
+		position: absolute;
+		left: 22px;
+		top: 7px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 64px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(46,97,168,1);
+	}
+	#Group_474 {
+		opacity: 1;
+		position: absolute;
+		width: 247px;
+		height: 37px;
+		left: 64px;
+		top: 203px;
+		overflow: visible;
+	}
+	#Rectangle_670_A12_Rectangle_152 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_670_A12_Rectangle_152 {
+		position: absolute;
+		overflow: visible;
+		width: 247px;
+		height: 37px;
+		left: 0px;
+		top: 0px;
+	}
+	#Due_Date_ {
+		opacity: 1;
+		position: absolute;
+		left: 22px;
+		top: 7px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 82px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(46,97,168,1);
+	}
+	#Group_466 {
+		opacity: 1;
+		position: absolute;
+		width: 63px;
+		height: 18px;
+		left: 281px;
+		top: 765px;
+		overflow: visible;
+	}
+	#Rectangle_650 {
+		opacity: 1;
+		fill: rgba(46,97,168,1);
+	}
+	.Rectangle_650 {
+		position: absolute;
+		overflow: visible;
+		width: 63px;
+		height: 18px;
+		left: 0px;
+		top: 0px;
+	}
+	#Submit {
+		opacity: 1;
+		position: absolute;
+		left: 10px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 44px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Your_Message_Here___ {
+		opacity: 1;
+		position: absolute;
+		left: 55px;
+		top: 323px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 121px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(115,167,247,1);
+	}
+	#Your_Message_Here____A12_Text_151 {
+		opacity: 1;
+		position: absolute;
+		left: 55px;
+		top: 498px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 121px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(115,167,247,1);
+	}
+	#Your_Message_Here____A12_Text_152 {
+		opacity: 1;
+		position: absolute;
+		left: 55px;
+		top: 672px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 121px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(115,167,247,1);
+	}
+</style>
+</head>
+<body>
+<div id="submit_project">
+	<div id="Go_Back">
+		<span>Go Back</span>
+	</div>
+	<div id="Icon___Keyboard_Arrow___Right_">
+		<svg class="Box">
+			<rect id="Box" rx="0" ry="0" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Path_2044" viewBox="630.6 4.4 6.6 11.2">
+			<path id="Path_2044" d="M 630.9000244140625 4.699999809265137 C 630.5 5.099999904632568 630.5 5.699999809265137 630.9000244140625 6.099999904632568 L 634.800048828125 10 L 630.9000244140625 13.89999961853027 C 630.5 14.29999923706055 630.5 14.89999961853027 630.9000244140625 15.29999923706055 C 631.300048828125 15.69999885559082 631.9000244140625 15.69999885559082 632.300048828125 15.29999923706055 L 636.9000244140625 10.69999885559082 C 637.300048828125 10.29999923706055 637.300048828125 9.69999885559082 636.9000244140625 9.299999237060547 L 632.300048828125 4.699999332427979 C 631.9000244140625 4.300000190734863 631.2999877929688 4.300000190734863 630.9000244140625 4.699999809265137 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Description_">
+		<span>Description:</span>
+	</div>
+	<svg class="Rectangle_656">
+		<rect id="Rectangle_656" rx="0" ry="0" x="0" y="0" width="110" height="1">
+		</rect>
+	</svg>
+	<svg class="Path_2312" viewBox="0 0 313 142">
+		<path id="Path_2312" d="M 15 0 L 298 0 C 306.2842712402344 0 313 6.715728759765625 313 15 L 313 127 C 313 135.2842712402344 306.2842712402344 142 298 142 L 15 142 C 6.715728759765625 142 0 135.2842712402344 0 127 L 0 15 C 0 6.715728759765625 6.715728759765625 0 15 0 Z">
+		</path>
+	</svg>
+	<div id="Project_Details">
+		<span>Project Details</span>
+	</div>
+	<svg class="Path_2313" viewBox="0 0 313 142">
+		<path id="Path_2313" d="M 15 0 L 298 0 C 306.2842712402344 0 313 6.715728759765625 313 15 L 313 127 C 313 135.2842712402344 306.2842712402344 142 298 142 L 15 142 C 6.715728759765625 142 0 135.2842712402344 0 127 L 0 15 C 0 6.715728759765625 6.715728759765625 0 15 0 Z">
+		</path>
+	</svg>
+	<div id="Project_Design_Ideas">
+		<span>Project Design Ideas</span>
+	</div>
+	<svg class="Path_2314" viewBox="0 0 313 58.108">
+		<path id="Path_2314" d="M 15 0 L 298 0 C 306.2842712402344 0 313 2.748171091079712 313 6.138211250305176 L 313 51.97019195556641 C 313 55.36023330688477 306.2842712402344 58.10840225219727 298 58.10840225219727 L 15 58.10840225219727 C 6.715728759765625 58.10840225219727 0 55.36023330688477 0 51.97019195556641 L 0 6.138211250305176 C 0 2.748171091079712 6.715728759765625 0 15 0 Z">
+		</path>
+	</svg>
+	<div id="Reference_Links_">
+		<span>Reference Links:</span>
+	</div>
+	<div id="Group_473">
+		<svg class="Rectangle_670">
+			<rect id="Rectangle_670" rx="15" ry="15" x="0" y="0" width="247" height="37">
+			</rect>
+		</svg>
+		<div id="Budget_">
+			<span>Budget:</span>
+		</div>
+	</div>
+	<div id="Group_474">
+		<svg class="Rectangle_670_A12_Rectangle_152">
+			<rect id="Rectangle_670_A12_Rectangle_152" rx="15" ry="15" x="0" y="0" width="247" height="37">
+			</rect>
+		</svg>
+		<div id="Due_Date_">
+			<span>Due Date:</span>
+		</div>
+	</div>
+	<div id="Group_466">
+		<svg class="Rectangle_650">
+			<rect id="Rectangle_650" rx="9" ry="9" x="0" y="0" width="63" height="18">
+			</rect>
+		</svg>
+		<div id="Submit">
+			<span>Submit</span>
+		</div>
+	</div>
+	<div id="Your_Message_Here___">
+		<span>Your Message Here...</span>
+	</div>
+	<div id="Your_Message_Here____A12_Text_151">
+		<span>Your Message Here...</span>
+	</div>
+	<div id="Your_Message_Here____A12_Text_152">
+		<span>Your Message Here...</span>
+	</div>
+</div>
+</body>
+</html>
